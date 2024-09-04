@@ -52,7 +52,7 @@ describe('Authorizer test suite', () => {
         expect(actual).toBe(expected); 
     });
 
-    it('validateToken- it should return false for invalid token', async () => { });
+    it.todo('validateToken- it should return false for invalid token');
     
     it('registerUser - it should return userId when a user is added', async () => { 
         
@@ -86,7 +86,7 @@ describe('Authorizer test suite', () => {
 
     });
 
-    it('login - it should return undefined when user is not found');
+    it.todo('login - it should return undefined when user is not found');
 
     it('logOut - it should invalidate token', async () => { 
         const invalidateTokenSpy = jest.spyOn(SessionTokenDataAccess.prototype, 'invalidateToken');

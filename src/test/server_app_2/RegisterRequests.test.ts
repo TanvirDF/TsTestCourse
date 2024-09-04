@@ -1,3 +1,7 @@
+//LOW MOCK TESTING EXAMPLE
+// Done by creating a wrapper class of the request and response
+
+
 import { DataBase } from "../../app/server_app/data/DataBase";
 import { HTTP_CODES, HTTP_METHODS } from "../../app/server_app/model/ServerModel";
 import { Server } from "../../app/server_app/server/Server";
