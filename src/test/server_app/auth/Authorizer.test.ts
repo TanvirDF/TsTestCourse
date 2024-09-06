@@ -93,6 +93,8 @@ describe('Authorizer test suite', () => {
         await authorizer.logout(tokenId);
         expect(invalidateTokenSpy).toHaveBeenCalledWith(tokenId);
     });
+
+    
     
 
 })

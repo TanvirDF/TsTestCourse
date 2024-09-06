@@ -1,6 +1,7 @@
 import { HTTP_CODES, HTTP_METHODS } from "../../app/server_app/model/ServerModel";
 import { Server } from "../../app/server_app/server/Server";
-
+import * as generated from "../../app/server_app/data/IdGenerator";
+import { Reservation } from "../../app/server_app/model/ReservationModel";
 
 describe(' Server app Integration tests', () => { 
 
@@ -234,5 +235,29 @@ describe(' Server app Integration tests', () => {
         expect(resultBody).toBeDefined();
         expect(resultBody).toEqual(`Deleted reservation with id ${reservationId}`);
     });
+
+        it('snapshot demo', async ()=>{
+        jest.spyOn(generated, 'generateRandomId').mockReturnValueOnce('12345');    
+        await fetch('http://localhost:8080/reservation', {
+            method:HTTP_METHODS.POST,
+            body: JSON.stringify(someReservation),
+            headers: {
+                authorization: authToken
+            }
+        });
+
+        const getResult = await fetch(`http://localhost:8080/reservation/12345`, {
+            method:HTTP_METHODS.GET,
+            headers: {
+                authorization: authToken
+            }
+        });
+        const getRequestBody: Reservation = await getResult.json();
+
+        expect(getRequestBody).toMatchSnapshot();
+        expect(getRequestBody).toMatchSnapshot();
+    })
+
+    
 
 });
