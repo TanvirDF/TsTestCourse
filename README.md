@@ -1,3 +1,12 @@
 # TSTestCourse
 
-A refresher Typescript project that covers all the testing types using Jest.
+A refresher Typescript project that covers all the testing types using Jest, which can be used as a reference project. The project covers all the aspects of unit testing and integration testing such as: 
+  - Unit-testing configuration with parameters like: roots, transform, testRegex or verbose.
+  - Test suites structure: describe with value, test, descriptions, and hooks like beforeEach.
+  - Basic and advanced assertions, comparing primitive types, objects, or even errors.
+  - Instantiating test double objects like mocks, stubs, spies or fakes.
+  - 
+
+![UnitTest](https://github.com/user-attachments/assets/0f61e0b5-04f6-4315-8609-0146c496dd94)
+
+![IntegrationTest](https://github.com/user-attachments/assets/d7a5521c-195d-43ce-ac92-cb078bb34c4d)
