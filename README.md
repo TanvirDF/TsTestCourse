@@ -13,6 +13,8 @@ A refresher Typescript project that covers all the testing types using Jest. The
 <div>
   <img src='https://github.com/user-attachments/assets/0f61e0b5-04f6-4315-8609-0146c496dd94' alt='unitTest' width='600'/>
 </div>
+<div>
+  <img src='https://github.com/user-attachments/assets/d7a5521c-195d-43ce-ac92-cb078bb34c4d' alt='unitTest' width='600'/>
+</div>
 
-<img src='https://github.com/user-attachments/assets/d7a5521c-195d-43ce-ac92-cb078bb34c4d' alt='unitTest' width='600'/>
 
