@@ -9,6 +9,7 @@ A refresher Typescript project that covers all the testing types using Jest. The
   - Jest mocks, spies.
   - London/Chicago testing approach.
   - Jest Integration tests for Rest APIs
+  - Custom matchers and snapshots.
 
 ![UnitTest](https://github.com/user-attachments/assets/0f61e0b5-04f6-4315-8609-0146c496dd94)
 
